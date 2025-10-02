@@ -1,0 +1,1 @@
+// funcs for header and footer (using fetch)
