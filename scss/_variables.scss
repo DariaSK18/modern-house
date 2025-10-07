@@ -9,9 +9,18 @@
   //   --bs-body-bg: var(--bs-dark);
   //   --bs-body-color: #f9fffb;
 
+  --bs-body-bg: rgb(242, 242, 242);
+  --bs-body-color: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-tertiary-bg-rgb: 180, 180, 180;
+
+  --body-bg-color: rgb(233, 233, 233);
   --primary-color: #031507;
   --secondary-color: #004d15;
-  --text-color: #f9fffb;
+  --text-color: rgb(12, 15, 12);
   --neon-color: #00ff7b;
   --shadow-color: #34ff9625;
+  --btn-color: var(--body-bg-color);
+  
 }

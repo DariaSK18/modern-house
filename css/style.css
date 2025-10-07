@@ -46,16 +46,53 @@ body {
 
 /* variables and mixins */
 :root {
+  --bs-body-bg: rgb(242, 242, 242);
+  --bs-body-color: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-tertiary-bg-rgb: 180, 180, 180;
+  --body-bg-color: rgb(233, 233, 233);
   --primary-color: #031507;
   --secondary-color: #004d15;
-  --text-color: #f9fffb;
+  --text-color: rgb(12, 15, 12);
   --neon-color: #00ff7b;
   --shadow-color: #34ff9625;
+  --btn-color: var(--body-bg-color);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.header__side {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.header__btn {
+  margin: 1rem;
+  background: var(--btn-color);
+}
+
+.navbar, .header__btn {
+  border-radius: 2.2rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-collapse {
+  justify-content: end;
+  flex-grow: 0;
+}
+
+.navbar-toggler {
+  border: 0.1rem solid var(--text-color);
 }
 
 body {
   font-family: "Nunito", "Roboto";
   font-size: 1rem;
+  background: var(--body-bg-color);
 }
 
 [class*=__container] {
@@ -71,6 +108,7 @@ body {
 }
 .wrapper .main {
   flex-grow: 1;
+  padding-top: 6rem;
 }
 .wrapper .footer {
   flex: 0 1 auto;
