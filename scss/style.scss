@@ -1,32 +1,32 @@
 // ---- imports style.scss
-@import 'reset';
-@import 'variables';
-@import 'header';
-@import 'footer';
+@import "reset";
+@import "variables";
+@import "header";
+@import "footer";
 
 // ---- common styles
 
 body {
-    font-family: "Nunito", "Roboto";
-    font-size: 1rem;
-    background: var(--body-bg-color);
+  font-family: "Nunito", "Roboto";
+  font-size: 1rem;
+  background: var(--body-bg-color);
 }
 [class*="__container"] {
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 1rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
 }
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    .main {
-        flex-grow: 1;
-        padding-top: 6rem;
-    }
-    .footer {
-        flex: 0 1 auto;
-    }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .main {
+    flex-grow: 1;
+    padding-top: 6rem;
+  }
+  .footer {
+    flex: 0 1 auto;
+  }
 }
 
 // .swiper {
@@ -39,3 +39,88 @@ body {
 //     object-position: center;
 //   }
 // }
+
+// home page - hero section
+
+.main {
+  // .main__picture-block
+  &__picture-block {
+    height: 80vh;
+    border-radius: 3rem;
+    background: url(../img/swiper/h7.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  &__picture-block::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    background: #00000089;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+}
+.block {
+  padding: 5rem;
+  color: var(--text-light-color);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  // .block__labels
+  &__labels {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      font-size: 2rem;
+    }
+  }
+  // .block__label
+  &__label,
+  &__heading,
+  &__content,
+  i,
+  p {
+    position: relative;
+    z-index: 7;
+  }
+  // .block__heading
+  &__heading {
+    font-size: 3rem;
+  }
+  // .block__content
+  &__content {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+  }
+  &__text {
+    max-width: 38rem;
+    font-size: 1.7rem;
+  }
+  // .block__sign
+  &__sign {
+    flex-shrink: 0;
+  }
+  // .block__profile-images
+  &__profile-images {
+    display: flex;
+    img {
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  // .block__rates
+  &__rates {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: end;
+  }
+}
