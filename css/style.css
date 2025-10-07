@@ -75,7 +75,8 @@ body {
   background: var(--btn-color);
 }
 
-.navbar, .header__btn {
+.navbar,
+.header__btn {
   border-radius: 2.2rem;
   padding: 0.5rem 1rem;
 }
