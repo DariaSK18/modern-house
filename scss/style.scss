@@ -40,9 +40,15 @@ body {
 //   }
 // }
 
-// home page - hero section
+// ---- home page - hero section
 
 .main {
+  &__container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
   // .main__picture-block
   &__picture-block {
     height: 80vh;
@@ -65,7 +71,7 @@ body {
   }
 }
 .block {
-  padding: 5rem;
+  padding: 3rem;
   color: var(--text-light-color);
   display: flex;
   flex-direction: column;
@@ -123,4 +129,31 @@ body {
     gap: 0.5rem;
     align-items: end;
   }
+}
+
+// ---- home-page - middle section
+
+.main {
+  &__middle-block {
+  }
+}
+.card {
+  border-radius: 1.5rem;
+  border: none;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  .card-icon,
+  .card-text-small {
+    background: var(--body-bg-color);
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+}
+.card-text {
+  text-align: center;
+  flex-grow: 1;
 }
