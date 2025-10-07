@@ -13,6 +13,7 @@
     margin: 1rem;
     background: var(--btn-color);
   }
+  
 }
 .navbar,
 .header__btn {
@@ -23,7 +24,21 @@
 .navbar-collapse {
   justify-content: end;
   flex-grow: 0;
+  padding-top: 2rem;
 }
 .navbar-toggler {
   border: 0.1rem solid var(--text-color);
+}
+
+.nav-link {
+  // color: #333;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--btn-color);
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
 }
