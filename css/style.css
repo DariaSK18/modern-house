@@ -56,7 +56,7 @@ body {
   --secondary-color: #004d15;
   --text-color: rgb(12, 15, 12);
   --neon-color: #00ff7b;
-  --shadow-color: #34ff9625;
+  --shadow-color: #00000093;
   --btn-color: var(--body-bg-color);
 }
 
@@ -88,6 +88,40 @@ body {
 
 .navbar-toggler {
   border: 0.1rem solid var(--text-color);
+}
+
+.footer__box {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link {
+  color: #333;
+  border-radius: var(--bs-nav-pills-border-radius);
+  transition: all 0.5s ease-in-out;
+}
+.nav-link:hover {
+  background-color: var(--primary-color);
+  color: var(--btn-color);
+  border-radius: 1.5rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--primary-color);
+  color: var(--btn-color);
+  border-radius: 1.5rem;
+}
+
+.nav-pills .nav-link {
+  border-radius: 1.5rem;
+  width: 7rem;
+  text-align: center;
+}
+
+.nav-pills {
+  display: flex;
+  gap: 1rem;
 }
 
 body {
