@@ -60,6 +60,7 @@ body {
   --neon-color: #00ff7b;
   --shadow-color: #00000093;
   --btn-color: var(--body-bg-color);
+  --accordion-color: rgba(180, 180, 180, 0.5);
 }
 
 .header {
@@ -160,6 +161,21 @@ body {
 }
 .wrapper .footer {
   flex: 0 1 auto;
+}
+
+.label {
+  background: var(--text-light-color);
+  padding: 1rem;
+  border-radius: 2rem;
+  max-width: max-content;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
 }
 
 .main__container {
@@ -304,18 +320,7 @@ body {
   gap: 1rem;
   align-items: center;
 }
-.properties__label {
-  background: var(--text-light-color);
-  padding: 1rem;
-  border-radius: 2rem;
-  max-width: max-content;
-}
-.properties__title {
-  font-size: 2.5rem;
-}
-.properties__subtitle {
-  font-size: 1.2rem;
-}
+
 .card-label {
   background: var(--text-light-color);
   padding: 0.3rem;
@@ -362,6 +367,27 @@ body {
   display: flex;
   gap: 0.7rem;
   align-items: center;
+}
+
+.main__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.accordion-header {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--accordion-color);
+  color: var(--text-color);
+}
+
+.accordion-button:focus {
+  box-shadow: var(--accordion-color);
 }
 
 /*# sourceMappingURL=style.css.map */

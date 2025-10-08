@@ -192,12 +192,18 @@
       var swiper = new Swiper(".mySwiper", {
         direction: "vertical",
         slidesPerView: 1,
+        speed: 1000,
+        parallax: true,
         spaceBetween: 30,
         mousewheel: true,
         loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
         },
       });
     </script>
