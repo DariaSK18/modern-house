@@ -34,3 +34,7 @@
 //     el: '.swiper-scrollbar',
 //   },
 // });
+
+$( function() {
+    $( ".widget input[type=submit], .widget a, .widget button" ).button();
+})
