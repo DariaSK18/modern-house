@@ -120,6 +120,14 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 37.5rem) {
+  .footer__box {
+    gap: 0.2rem;
+  }
+  .footer__rights {
+    font-size: 0.7rem;
+  }
+}
 .footer .nav-link {
   color: #333;
   border-radius: var(--bs-nav-pills-border-radius);
@@ -143,11 +151,22 @@ body {
   text-align: center;
 }
 
+@media (max-width: 37.5rem) {
+  .nav-pills .nav-link {
+    border-radius: 1.5rem;
+    width: min-content;
+  }
+}
 .nav-pills {
   display: flex;
   gap: 0.7rem;
 }
 
+@media (max-width: 37.5rem) {
+  .nav-pills {
+    gap: 0.1rem;
+  }
+}
 body {
   font-family: "Nunito", "Roboto";
   font-size: 1rem;
@@ -169,6 +188,11 @@ body {
   flex-grow: 1;
   padding-top: 6rem;
 }
+@media (max-width: 30rem) {
+  .wrapper .main {
+    padding-top: 4.2rem;
+  }
+}
 .wrapper .footer {
   flex: 0 1 auto;
 }
@@ -179,19 +203,40 @@ body {
   border-radius: 2rem;
   max-width: max-content;
 }
+@media (max-width: 37.5rem) {
+  .label {
+    font-size: 0.7rem;
+  }
+}
 
 .title {
-  font-size: 2.5rem;
+  font-size: 4rem;
+  text-align: center;
+}
+@media (max-width: 37.5rem) {
+  .title {
+    font-size: 1.5rem;
+  }
 }
 
 .subtitle {
   font-size: 1.2rem;
+}
+@media (max-width: 37.5rem) {
+  .subtitle {
+    font-size: 1rem;
+  }
 }
 
 .main__container {
   display: flex;
   gap: 5rem;
   flex-direction: column;
+}
+@media (max-width: 37.5rem) {
+  .main__container {
+    gap: 1rem;
+  }
 }
 .main__picture-block {
   height: 80vh;
@@ -200,6 +245,11 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+}
+@media (max-width: 37.5rem) {
+  .main__picture-block {
+    height: max-content;
+  }
 }
 .main__picture-block::after {
   content: "";
@@ -238,10 +288,21 @@ body {
 .block__heading {
   font-size: 3rem;
 }
+@media (max-width: 37rem) {
+  .block__heading {
+    font-size: 2rem;
+  }
+}
 .block__content {
   display: flex;
   gap: 4rem;
   justify-content: space-between;
+}
+@media (max-width: 37.5rem) {
+  .block__content {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 .block__text {
   max-width: 38rem;
@@ -283,6 +344,15 @@ body {
   border-radius: 2rem;
 }
 
+@media (max-width: 37.5rem) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    flex-grow: 1;
+    width: 100%;
+  }
+}
 .card-text {
   text-align: center;
   flex-grow: 1;
@@ -384,6 +454,11 @@ body {
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+}
+@media (max-width: 37.5rem) {
+  .main__intro {
+    gap: 1rem;
+  }
 }
 
 .accordion-header {

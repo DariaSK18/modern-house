@@ -23,40 +23,37 @@ body {
   .main {
     flex-grow: 1;
     padding-top: 6rem;
+    @media (max-width: 30rem) {
+      padding-top: 4.2rem;
+    }
   }
+
   .footer {
     flex: 0 1 auto;
   }
 }
-
 .label {
   background: var(--text-light-color);
   padding: 1rem;
   border-radius: 2rem;
   max-width: max-content;
+  @media (max-width: 37.5rem) {
+    font-size: 0.7rem;
+  }
 }
-
-// .properties__title
-
 .title {
-  font-size: 2.5rem;
+  font-size: 4rem;
+  text-align: center;
+  @media (max-width: 37.5rem) {
+    font-size: 1.5rem;
+  }
 }
-
-// .properties__subtitle
-
 .subtitle {
   font-size: 1.2rem;
+  @media (max-width: 37.5rem) {
+    font-size: 1rem;
+  }
 }
-// .swiper {
-//   width: 100%;
-//   height: 80vh;
-//   border-radius: 3rem;
-//   img {
-//     width: 100%;
-//     object-fit: contain;
-//     object-position: center;
-//   }
-// }
 
 // ---- home page - hero section
 
@@ -65,9 +62,10 @@ body {
     display: flex;
     gap: 5rem;
     flex-direction: column;
+    @media (max-width: 37.5rem) {
+      gap: 1rem;
+    }
   }
-
-  // .main__picture-block
   &__picture-block {
     height: 80vh;
     border-radius: 3rem;
@@ -75,6 +73,9 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    @media (max-width: 37.5rem) {
+      height: max-content;
+    }
   }
   &__picture-block::after {
     content: "";
@@ -94,7 +95,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  // .block__labels
   &__labels {
     display: flex;
     gap: 1rem;
@@ -104,7 +104,6 @@ body {
       font-size: 2rem;
     }
   }
-  // .block__label
   &__label,
   &__heading,
   &__content,
@@ -113,25 +112,28 @@ body {
     position: relative;
     z-index: 7;
   }
-  // .block__heading
   &__heading {
     font-size: 3rem;
+    @media (max-width: 37rem) {
+      font-size: 2rem;
+    }
   }
-  // .block__content
   &__content {
     display: flex;
     gap: 4rem;
     justify-content: space-between;
+    @media (max-width: 37.5rem) {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
   &__text {
     max-width: 38rem;
     font-size: 1.7rem;
   }
-  // .block__sign
   &__sign {
     flex-shrink: 0;
   }
-  // .block__profile-images
   &__profile-images {
     display: flex;
     img {
@@ -140,7 +142,6 @@ body {
       height: 3rem;
     }
   }
-  // .block__rates
   &__rates {
     display: flex;
     flex-direction: column;
@@ -165,6 +166,15 @@ body {
     background: var(--body-bg-color);
     padding: 1rem;
     border-radius: 2rem;
+  }
+}
+@media (max-width: 37.5rem) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    flex-grow: 1;
+    width: 100%;
   }
 }
 .card-text {
@@ -272,6 +282,9 @@ body {
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+  @media (max-width: 37.5rem) {
+    gap: 1rem;
+  }
 }
 .accordion-header {
   font-weight: 600;
@@ -287,25 +300,25 @@ body {
 
 // ---- Testimonials page
 
-.main__testimonials-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.main__testimonials-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .main__testimonials-cards {
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    p {
-        flex-grow: 1;
-    }
-    .card {
-        flex-basis: 20rem;
-    }
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  p {
+    flex-grow: 1;
+  }
+  .card {
+    flex-basis: 20rem;
+  }
 }
 
 // ---- Book page

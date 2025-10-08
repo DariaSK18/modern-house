@@ -14,15 +14,13 @@
     align-items: center;
     justify-content: space-between;
   }
-
-  // .footer__rights
-
-  &__rights {
+  @media (max-width: 37.5rem ){
+    &__box {
+    gap: 0.2rem;
   }
-
-  // .footer__links
-
-  &__links {
+  &__rights {
+    font-size: 0.7rem;
+  }
   }
   .nav-link {
   color: #333;
@@ -52,8 +50,19 @@
   width: 7rem;
   text-align: center;
 }
+ @media (max-width: 37.5rem ){
+    .nav-pills .nav-link {
+  border-radius: 1.5rem;
+  width: min-content;
+}
+  }
 
 .nav-pills {
   display: flex;
   gap: 0.7rem;
 }
+ @media (max-width: 37.5rem ){
+    .nav-pills {
+  gap: 0.1rem;
+}
+  }
