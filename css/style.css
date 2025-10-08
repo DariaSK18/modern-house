@@ -390,6 +390,26 @@ body {
   box-shadow: var(--accordion-color);
 }
 
+.main__testimonials-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main__testimonials-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.main__testimonials-cards p {
+  flex-grow: 1;
+}
+.main__testimonials-cards .card {
+  flex-basis: 20rem;
+}
+
 .main__book {
   width: 100%;
   height: max-content;
