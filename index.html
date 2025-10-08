@@ -15,12 +15,12 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 />  -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    /> -->
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script defer src="./js/layout-loader.js"></script>
     <script defer src="./js/main.js"></script>
     <title>Home</title>
@@ -71,35 +71,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./img/swiper/house-19.jpg" alt="Image" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/swiper/house-23.jpg" alt="Image" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/swiper/house-24.jpg" alt="Image" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/swiper/house-25.jpg" alt="Image" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/swiper/house-26.jpg" alt="Image" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/swiper/house-27.jpg" alt="Image" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/swiper/house-28.jpg" alt="Image" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/swiper/house-29.jpg" alt="Image" />
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div> -->
           </section>
           <section class="main__middle-block">
             <div class="row row-cols-2 row-cols-md-2 g-4">
@@ -167,6 +138,43 @@
               </div>
             </div>
           </section>
+          <section class="main__bottom-block">
+            <div class="main__small-top-pic">
+              <img src="./img/swiper/house1.jpg" alt="decor" />
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/swiper/house17.jpg" alt="Image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/swiper/house13.jpg" alt="Image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/swiper/house14.jpg" alt="Image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/swiper/house15.jpg" alt="Image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/swiper/house16.jpg" alt="Image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/swiper/house18.jpg" alt="Image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/swiper/house19.jpg" alt="Image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/swiper/house12.jpg" alt="Image" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="main__small-bottom-pic">
+              <img src="./img/swiper/house3.jpg" alt="decor" />
+            </div>
+          </section>
         </div>
       </main>
       <footer id="footer-placeholder" class="footer"></footer>
@@ -180,17 +188,18 @@
       src="https://kit.fontawesome.com/37e3e87d44.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script>
-    var swiper = new Swiper(".mySwiper", {
-      direction: "vertical",
-      slidesPerView: 1,
-      spaceBetween: 30,
-      mousewheel: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script> -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
