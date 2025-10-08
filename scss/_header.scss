@@ -13,11 +13,20 @@
     margin: 1rem;
     background: var(--btn-color);
   }
+  &__logo{
+    width: 2rem;
+    height: 2rem;
+  }
 }
 .navbar,
 .header__btn {
   border-radius: 2.2rem;
   padding: 0.5rem 1rem;
+}
+.navbar-brand {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .navbar-collapse {
