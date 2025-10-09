@@ -285,14 +285,14 @@ body {
     transform: scale(1);
   }
 }
-// @keyframes slide-in {
-//   from {
-//     transform: scale(0.4);
-//   }
-//   to {
-//     transform: scale(1);
-//   }
-// }
+@keyframes slide-up {
+  from {
+    bottom: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
 
 .main {
   &__cards-block {
@@ -344,8 +344,89 @@ body {
     transform: scale(0.9);
   }
 }
-
-
+.description-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  @media (max-width: 51.25rem) {
+    grid-template-columns: 1fr;
+  }
+}
+.card-after-el {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3rem;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--shadow-color);
+    position: absolute;
+    inset: 0;
+    transform: translateY(100%);
+    transition: all 0.7s ease-in-out;
+    // will-change: transform;
+  }
+  &:hover {
+    &::after {
+      transform: translateY(0);
+    }
+    .card-img-overlay {
+        top: 0;
+      }
+  }
+}
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: absolute;
+  top: 100%;
+  z-index: 3;
+  padding: 1rem;
+  transition: all 0.7s ease-in-out;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+    }
+    h3::before {
+      content: "";
+      background: var(--text-light-color);
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+    }
+  }
+  @media (max-width: 30rem) {
+    gap: 0.3rem;
+    .card-title{
+      font-size: 1rem;
+    }
+    ul{
+      gap:0;
+    }
+    h3{
+      font-size: 0.5rem;
+      gap:0;
+    }
+    p{
+      font-size: 0.5rem;
+    }
+  }
+}
+.card-title {
+  text-align: center;
+}
+.card-info {
+}
+.card-text {
+}
 
 // ---- FAQ page
 
