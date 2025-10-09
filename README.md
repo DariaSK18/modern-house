@@ -21,3 +21,12 @@ Inspired by the “Noven” Webflow template by Flowbase. Recreated for learning
 - Fully structured semantic HTML
 - Smooth hover effects on desktop (disabled for mobile)
 
+## 📸 Screenshots
+<div>
+<img src="screenshots/screenshot-0.png" width="30%" alt="App Screenshot">
+<img src="screenshots/screenshot-1.png" width="30%" alt="App Screenshot">
+<img src="screenshots/screenshot-2.png" width="30%" alt="App Screenshot">
+<img src="screenshots/screenshot-3.png" width="30%" alt="App Screenshot">
+<img src="screenshots/screenshot-4.png" width="30%" alt="App Screenshot">
+</div>
+
