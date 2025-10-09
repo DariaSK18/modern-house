@@ -1,9 +1,18 @@
 // ---- header styles
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
 
 .header {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  animation: slide-down 0.8s ease-in;
   &__side {
     display: flex;
     gap: 3rem;

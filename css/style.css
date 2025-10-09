@@ -63,10 +63,19 @@ body {
   --accordion-color: rgba(180, 180, 180, 0.5);
 }
 
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
 .header {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  animation: slide-down 0.8s ease-in;
 }
 .header__side {
   display: flex;
@@ -457,13 +466,27 @@ body {
     transform: scale(1);
   }
 }
-@keyframes slide-up {
-  from {
-    bottom: -100%;
+@media (hover: none) {
+  .card::after {
+    transform: translateY(0);
   }
-  to {
+  .card .card-img-overlay {
     top: 0;
   }
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5 {
+    transform: scale(1);
+  }
+}
+.main__headings {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 .main__cards-block {
   display: grid;
