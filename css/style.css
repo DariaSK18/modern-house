@@ -466,7 +466,7 @@ body {
     transform: scale(1);
   }
 }
-@media (hover: none) {
+@media (hover: none) and (pointer: fine) {
   .card::after {
     transform: translateY(0);
   }
